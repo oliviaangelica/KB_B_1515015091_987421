@@ -1,0 +1,75 @@
+
+
+KEYWOARD YANG TERDAPAT PADA PROLOG :
+
+
+- Domains :
+
+Domain dalam Prolog seperti type dalam Pascal, yaitu untuk menyatakan jenis variable atau argumen.
+
+Ada lima domain baku di dalam Prolog, yaitu:
+>char, karakter tunggal yang diapit oleh tanda kutip tunggal: ‘a’, ‘b’, ‘\13’.
+>integer, bilangan bulat antara –32768 hingga 32767. Notasi $ digunakan untuk menunjukkan bilangan heksa.
+>real, bilangan nyata antara 1x10 –307 hingga 1 x 10 308.
+>string, deretan karakter yang diapit oleh tanda kutip dobel, misalnya “ipb”.
+>symbol, rangkaian karakter yang diawali dengan huruf kecil da tanpa tanda apa pun.
+
+
+- Predikat  :
+
+Predikat adalah nama simbolik untuk relasi.
+Sebuah predikat dapat tidak memiliki atau memiliki argumen dengan jumlah bebas. Jumlah argumen suatu predikat disebut aritas.
+Syarat-syarat penulisan nama predikat :
+·Harus diawali dengan huruf kecil dan dapat diikuti dengan huruf, bilangan atau garis bawah.
+·Panjang nama predikat maksimum 250 karakter.
+·Tidak diperbolehkan menggunakan spasi, tanda minus, tanda bintang dan garis miring.
+
+
+- implement and end implement :
+
+Di antara semua kata kunci yang dibahas di sini, ini adalah satu-satunya, yang ada sebagai pasangan. 
+Visual Prolog memperlakukan kode yang ditulis antara dua kata kunci tersebut sebagai kode milik satu kelas. 
+Nama kelas harus diberikan setelah menerapkan kata kunci.
+
+
+- Open :
+Kata kunci ini digunakan untuk memperluas visibilitas lingkup kelas. 
+Hal ini untuk digunakan hanya setelah menerapkan kata kunci.
+
+
+- constants :
+
+Kata kunci ini digunakan untuk menandai bagian dari kode yang mendefinisikan beberapa nilai yang umum digunakan 
+dalam kode program. Misalnya, jika string literal "PDC Prolog" yang akan digunakan di beberapa lokasi di seluruh kode,
+maka Anda dapat menentukan mnemonic (pendek-bentuk, kata mudah diingat) untuk sama sehingga:
+konstanta
+    pdc = "PDC Prolog".
+Perhatikan bahwa definisi dari ujung konstan dalam periode (.). 
+Tidak seperti variabel Prolog, konstanta harus menjadi kata yang dimulai dengan huruf kecil.
+
+
+- Class Fact :
+
+Kata kunci ini menunjuk bagian, yang menyatakan fakta-fakta yang akan digunakan nanti dalam kode program. 
+Setiap Bahkan dinyatakan dengan nama yang digunakan untuk menandakan fakta dan argumen yang digunakan untuk 
+fakta masing-masing bersama dengan domain yang mereka argumen milik.
+
+
+- Clause :
+
+Bagian ini berisi deklarasi predikat yang akan kemudian didefinisikan dalam bagian klausa kode. 
+Sekali lagi, nama-nama yang akan digunakan untuk predikat ini bersama dengan argumen dan domain, 
+dimana argumen milik, akan ditunjukkan di bagian ini.klausa Dari semua bagian yang hadir dalam kode
+Visual Prolog, bagian ini adalah salah satu yang erat meniru program tradisional Prolog. 
+Ini berisi definisi sebenarnya dari predikat sebelumnya dinyatakan. Dan Anda akan menemukan bahwa 
+predikat yang digunakan di sini akan mengikuti sintaks sebagaimana dinyatakan di kelas predikat bagian.
+
+
+- Goal :
+
+Bagian ini mendefinisikan titik masuk utama ke program Visual Prolog.
+
+
+- Global :
+
+untuk mendeklerasikan beberapa domain, predikat dan klausa menjadi global.
